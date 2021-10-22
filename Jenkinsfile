@@ -15,13 +15,13 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh '\'./gradlew test\''
+        sh './gradlew test'
       }
     }
 
     stage('Validate') {
       steps {
-        sh '\'./gradlew check\''
+        sh './gradlew check'
       }
     }
 
