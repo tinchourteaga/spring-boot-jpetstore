@@ -5,8 +5,9 @@ pipeline {
       steps {
         git(url: 'https://github.com/tinchourteaga/spring-boot-jpetstore.git', branch: 'master')
         withGradle() {
-          sh '''\'./gradlew init\'
-\'./gradlew build\''''
+          sh '''./gradlew init
+./gradlew build
+./gradlew jar'''
         }
 
       }
