@@ -4,6 +4,7 @@ plugins {
     id("com.diffplug.spotless") version "5.17.0"
     id("org.springframework.boot") version "2.5.6"
     id("org.seasar.doma.compile") version "1.1.0"
+    id("org.sonarqube") version "3.3"
 }
 
 apply(plugin = "io.spring.dependency-management")
