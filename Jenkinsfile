@@ -34,7 +34,7 @@ pipeline {
     stage('Analyze') {
       steps {
         withGradle() {
-          sh './gradlew sonarqube -Dsonar.projectKey=ing-sw-test -Dsonar.host.url=172.17.0.3 -Dsonar.login=a658cdb2acd018b598b2e44e63c985e87a0376b6'
+          sh './gradlew sonarqube -Dsonar.projectKey=ing-sw-test -Dsonar.host.url=172.17.0.3:9000 -Dsonar.login=a658cdb2acd018b598b2e44e63c985e87a0376b6'
         }
 
       }
